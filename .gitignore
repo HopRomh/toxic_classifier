@@ -1,0 +1,44 @@
+# ===== Виртуальное окружение и Python-мусор =====
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ===== IDE / ОС =====
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ===== Логи/кэши =====
+*.log
+.cache/
+
+# ===== Модель / результаты обучения (тяжёлое) =====
+results/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# ===== Датасеты: игнорим всех, кроме train_1 =====
+data/*
+!data/train_1/
+!data/train_1/**
+
+# отдельные источники датасетов — не тянем
+Датасеты из источников/
+ff.csv
+сохраненки.csv
